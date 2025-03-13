@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const ServiceIcon = ({ type }) => {
-  // This is a placeholder - you'd want to use actual icons
+  // Function to return appropriate icon based on type
   const getIcon = () => {
     switch (type) {
       case "code-brackets":
@@ -26,6 +26,18 @@ export const ServiceIcon = ({ type }) => {
         return (
           <div className="icon-placeholder software-design">
             <div className="design-icon">🖱️</div>
+          </div>
+        );
+      case "devops-consulting":
+        return (
+          <div className="icon-placeholder devops">
+            <div className="devops-icon">⚙️</div>
+          </div>
+        );
+      case "blogging":
+        return (
+          <div className="icon-placeholder blogging">
+            <div className="blog-icon">✍️</div>
           </div>
         );
       default:

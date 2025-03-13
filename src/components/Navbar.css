@@ -10,8 +10,8 @@
   .logo-container {
     background: #fff;
     padding: 0.5rem 1rem;
-    border: 2px solid #fff;
-    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
+    border: 2px solid #000;  /* Updated to match .nav-links */
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);  /* Updated to match .nav-links */
     transition: all 0.3s ease;
   }
   
@@ -26,6 +26,7 @@
     font-size: 1.5rem;
     letter-spacing: 1px;
     font-family: 'Arial', sans-serif;
+   
   }
   
   .logo-e {
