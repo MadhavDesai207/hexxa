@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+/* Letter animations */
+@keyframes slideInH {
+  0% { transform: translateX(-100px); opacity: 0; }
+  20% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideInE {
+  0% { transform: translateX(100px); opacity: 0; }
+  20% { transform: translateX(100px); opacity: 0; }
+  40% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideInX1 {
+  0% { transform: translateY(100px); opacity: 0; }
+  40% { transform: translateY(100px); opacity: 0; }
+  60% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes slideInX2 {
+  0% { transform: translateY(-100px); opacity: 0; }
+  60% { transform: translateY(-100px); opacity: 0; }
+  80% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes slideInA {
+  0% { transform: translateX(100px); opacity: 0; }
+  80% { transform: translateX(100px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Tech effect animations that start after all letters appear */
+@keyframes techGlow {
+  0%, 100% { filter: drop-shadow(0 0 5px rgba(0,98,204,0.5)); }
+  50% { filter: drop-shadow(0 0 15px rgba(0,98,204,0.7)); }
+}
+
+.letter {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  fill: #000000;
+}
+
+#H {
+  animation: slideInH 4s forwards;
+}
+
+#E {
+  animation: slideInE 4s forwards;
+}
+
+#X1 {
+  animation: slideInX1 4s forwards;
+}
+
+#X2 {
+  animation: slideInX2 4s forwards;
+}
+
+#A {
+  animation: slideInA 4s forwards;
+}
+
+.logo-container {
+  animation: techGlow 4s infinite alternate ease-in-out;
+  animation-delay: 4s;
+}
+
+/* Data line animations with slower transitions */
+.data-line {
+  stroke: #0062cc;
+  stroke-width: 1.5;
+  stroke-dasharray: 5 3;
+  fill: none;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards, smoothDataWave 20s infinite linear;
+  animation-delay: 1s, 1.5s;
+}
+
+.data-line2 {
+  stroke: #0062cc;
+  stroke-width: 0.8;
+  stroke-dasharray: 3 2;
+  fill: none;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards, smoothDataWave2 30s infinite linear;
+  animation-delay: 1.2s, 1.7s;
+}
+
+#circuit {
+  stroke: #0062cc;
+  stroke-width: 0.7;
+  fill: none;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  animation-delay: 1s;
+}
+
+.circuit-node {
+  fill: #0062cc;
+  opacity: 0;
+  r: 2;
+  animation: nodeGlow 3s infinite alternate ease-in-out;
+  animation-delay: 1.5s;
+}
+
+.grid-line {
+  stroke: rgba(0,98,204,0.15);
+  stroke-width: 0.5;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.8s;
+}
+
+.binary {
+  font-family: monospace;
+  font-size: 8px;
+  fill: rgba(0,98,204,0.2);
+  opacity: 0;
+  animation: fadeIn 1s forwards, floatUp 40s infinite linear;
+  animation-delay: 2s, 2.5s;
+}
+
+.ic-component {
+  stroke: #0062cc;
+  stroke-width: 1;
+  fill: rgba(0,98,204,0.05);
+  opacity: 0;
+  animation: fadeIn 0.8s forwards;
+  animation-delay: 1.3s;
+}
+
+.cpu-lines {
+  stroke: #0062cc;
+  stroke-width: 0.5;
+  fill: none;
+  opacity: 0;
+  animation: fadeIn 0.8s forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 0.7; }
+}
+
+/* Smooth wave animations with longer duration */
+@keyframes smoothDataWave {
+  0% { stroke-dashoffset: 1000; }
+  100% { stroke-dashoffset: 0; }
+}
+
+@keyframes smoothDataWave2 {
+  0% { stroke-dashoffset: 1500; }
+  100% { stroke-dashoffset: 0; }
+}
+
+@keyframes nodeGlow {
+  0% { opacity: 0.3; r: 1.5; }
+  50% { opacity: 0.9; r: 3; }
+  100% { opacity: 0.3; r: 1.5; }
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100px); }
+}
