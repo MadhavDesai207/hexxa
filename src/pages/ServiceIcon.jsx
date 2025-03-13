@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 export const ServiceIcon = ({ type }) => {
   // Function to return appropriate icon based on type
   const getIcon = () => {

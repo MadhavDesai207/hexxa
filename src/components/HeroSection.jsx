@@ -17,13 +17,6 @@ export const HeroSection = () => {
                     <HexaLogo />
                 </div>
             </div>
-            <div className="hero-footer">
-                <p className="hero-tagline">
-                    Harnessing AI to revolutionize businesses, enhance efficiency, and
-                    drive sustainable innovation for a smarter future.
-                </p>
-                <Link to="/contact" className="contact-button">Contact Us</Link>
-            </div>
         </section>
     );
 };

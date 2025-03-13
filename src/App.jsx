@@ -11,6 +11,7 @@ import { ContactPage } from './pages/ContactPage';
 import { HomePage } from './pages/HomePage';
 import { ServicesSection } from './pages/ServicesSection';
 import { WhyHexaPage } from './pages/WhyHexaPage';
+import { Footer } from './components/Footer';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/why-hexa" element={<WhyHexaPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
