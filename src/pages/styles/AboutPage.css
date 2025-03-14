@@ -1,0 +1,471 @@
+/* AboutPage.css */
+
+.about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Poppins', 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Introduction Section */
+.about-intro {
+  margin-bottom: 4rem;
+}
+
+.about-intro-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about-intro-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+  font-weight: 700;
+}
+
+.about-tagline {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.about-description {
+  color: #444;
+  line-height: 1.6;
+}
+
+.about-description p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* Stats Section */
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .about-intro-content {
+    flex-direction: row;
+  }
+  
+  .about-intro-text {
+    flex: 2;
+  }
+  
+  .about-stats {
+    flex: 1;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.stat-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: #333;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  position: relative;
+  border: 1px solid rgba(230, 230, 230, 0.7);
+  overflow: hidden;
+}
+
+.stat-box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #3498db, #8e44ad);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box:hover::after {
+  transform: scaleX(1);
+}
+
+.stat-value {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+  background: linear-gradient(90deg, #3498db, #8e44ad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: all 0.3s ease;
+}
+
+.stat-box:hover .stat-value {
+  transform: scale(1.1);
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.stat-box:hover .stat-label {
+  color: #333;
+}
+
+/* Vision and Mission Section */
+.vision-mission {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .vision-mission {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.vision-box, .mission-box {
+  background-color: #f9fafb;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(230, 230, 230, 0.7);
+}
+
+.vision-box:hover, .mission-box:hover {
+  transform: translateY(-5px);
+}
+
+.vision-box h2, .mission-box h2 {
+  color: #3498db;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Team Section */
+.team-section {
+  margin-top: 4rem;
+}
+
+.team-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.team-header h2 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.team-header p {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(230, 230, 230, 0.7);
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.team-image-container {
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+
+.team-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-size: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-image-placeholder::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(60deg, 
+    rgba(255,255,255,0) 40%, 
+    rgba(255,255,255,0.6) 50%, 
+    rgba(255,255,255,0) 60%);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg);
+  }
+}
+
+.team-info {
+  padding: 1.5rem;
+}
+
+.team-info h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.team-position {
+  color: #3498db;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.team-bio {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Animation for stats */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stat-box {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.stat-box:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.stat-box:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.stat-box:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.stat-box:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+/* Unique animated accent for each stat box */
+.stat-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 35%;
+  width: 35%;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M95 50 L50 5 L5 50 L50 95 Z' fill='none' stroke='%23E5E7EB' stroke-width='8'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 100%;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.stat-box:hover::before {
+  opacity: 0.8;
+  transform: rotate(45deg) scale(1.2);
+}
+
+/* Subtle accent colors for each stat box */
+.stat-box:nth-child(1) .stat-value {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.stat-box:nth-child(2) .stat-value {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.stat-box:nth-child(3) .stat-value {
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.stat-box:nth-child(4) .stat-value {
+  background: linear-gradient(135deg, #f1c40f, #f39c12);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.stat-box:nth-child(1)::after {
+  background: linear-gradient(90deg, #3498db, #2980b9);
+}
+
+.stat-box:nth-child(2)::after {
+  background: linear-gradient(90deg, #2ecc71, #27ae60);
+}
+
+.stat-box:nth-child(3)::after {
+  background: linear-gradient(90deg, #9b59b6, #8e44ad);
+}
+
+.stat-box:nth-child(4)::after {
+  background: linear-gradient(90deg, #f1c40f, #f39c12);
+}
+
+/* Add subtle pulse effect to numbers while animating */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.stat-box.animate .stat-value {
+  animation: pulse 1s ease-in-out;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .stat-value {
+    font-size: 2.5rem;
+    height: 3rem;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-box {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Optional: Improved overall page spacing and typography */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: sectionFadeIn 0.8s ease forwards;
+}
+
+@keyframes sectionFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-intro {
+  animation-delay: 0s;
+}
+
+.vision-mission {
+  animation-delay: 0.2s;
+}
+
+.team-section {
+  animation-delay: 0.4s;
+}
+
+/* Add a hexagonal theme element to match company name "Hexxa" */
+.vision-box::before,
+.mission-box::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 30px;
+  height: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 0 L93.3 25 L93.3 75 L50 100 L6.7 75 L6.7 25 Z' fill='none' stroke='%23E5E7EB' stroke-width='5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.vision-box,
+.mission-box {
+  position: relative;
+}
+
+
+

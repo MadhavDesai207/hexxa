@@ -1,6 +1,6 @@
 import React from 'react';
+import '../pages/styles/ServiceSection.css';
 import { ServiceCard } from './ServiceCard';
-import '/Users/md/Desktop/hexxa-website/src/pages/styles/ServiceSection.css';
 
 export const ServicesSection = () => {
   const services = 

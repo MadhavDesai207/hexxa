@@ -1,6 +1,6 @@
 import React from 'react';
 import { ServiceIcon } from './ServiceIcon';
-import '/Users/md/Desktop/hexxa-website/src/pages/styles/ServiceCard.css';
+import '../pages/styles/ServiceCard.css';
 
 export const ServiceCard = ({ service }) => {
   return (
