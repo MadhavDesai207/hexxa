@@ -6,7 +6,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
 import { Navbar } from './components/Navbar';
 import { AboutPage } from './pages/AboutPage';
-import { CaseStudiesPage } from './pages/CaseStudiesPage';
+import {  PortfolioPage } from './pages/PortfolioPage';
 import { ContactPage } from './pages/ContactPage';
 import { HomePage } from './pages/HomePage';
 import { ServicesSection } from './pages/ServicesSection';
@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesSection />} />
-          <Route path="/case-studies" element={<CaseStudiesPage />} />
+          <Route path="/case-studies" element={<PortfolioPage />} />
           <Route path="/why-hexa" element={<WhyHexaPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>

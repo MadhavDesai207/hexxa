@@ -20,7 +20,7 @@ export const Navbar = () => {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About Us</Link></li>
         <li><Link to="/services">Services</Link></li>
-        <li><Link to="/case-studies">Case Studies</Link></li>
+        <li><Link to="/case-studies">Portfolio</Link></li>
         <li><Link to="/why-hexa">Why Hexa ?</Link></li>
       </ul>
     </nav>

@@ -30,6 +30,12 @@
   100% { transform: translateX(0); opacity: 1; }
 }
 
+/* Background appearance animation - slower fade in */
+@keyframes backgroundFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 0.7; }
+}
+
 /* Tech effect animations that start after all letters appear */
 @keyframes techGlow {
   0%, 100% { filter: drop-shadow(0 0 5px rgba(0,98,204,0.5)); }
@@ -67,15 +73,15 @@
   animation-delay: 4s;
 }
 
-/* Data line animations with slower transitions */
+/* Data line animations - all now start after letters appear */
 .data-line {
   stroke: #0062cc;
   stroke-width: 1.5;
   stroke-dasharray: 5 3;
   fill: none;
   opacity: 0;
-  animation: fadeIn 0.5s forwards, smoothDataWave 20s infinite linear;
-  animation-delay: 1s, 1.5s;
+  animation: backgroundFadeIn 1.5s forwards, smoothDataWave 20s infinite linear;
+  animation-delay: 4s, 5.5s; /* Start after letters appear */
 }
 
 .data-line2 {
@@ -84,8 +90,8 @@
   stroke-dasharray: 3 2;
   fill: none;
   opacity: 0;
-  animation: fadeIn 0.5s forwards, smoothDataWave2 30s infinite linear;
-  animation-delay: 1.2s, 1.7s;
+  animation: backgroundFadeIn 1.5s forwards, smoothDataWave2 30s infinite linear;
+  animation-delay: 4.2s, 5.7s; /* Start after letters appear */
 }
 
 #circuit {
@@ -93,8 +99,8 @@
   stroke-width: 0.7;
   fill: none;
   opacity: 0;
-  animation: fadeIn 0.5s forwards;
-  animation-delay: 1s;
+  animation: backgroundFadeIn 1.5s forwards;
+  animation-delay: 4s; /* Start after letters appear */
 }
 
 .circuit-node {
@@ -102,24 +108,24 @@
   opacity: 0;
   r: 2;
   animation: nodeGlow 3s infinite alternate ease-in-out;
-  animation-delay: 1.5s;
+  animation-delay: 4.5s; /* Start after letters appear */
 }
 
 .grid-line {
   stroke: rgba(0,98,204,0.15);
   stroke-width: 0.5;
   opacity: 0;
-  animation: fadeIn 1s forwards;
-  animation-delay: 0.8s;
+  animation: backgroundFadeIn 2s forwards;
+  animation-delay: 4.2s; /* Start after letters appear */
 }
 
 .binary {
   font-family: monospace;
-  font-size: 8px;
+  font-size: 10px;
   fill: rgba(0,98,204,0.2);
   opacity: 0;
-  animation: fadeIn 1s forwards, floatUp 40s infinite linear;
-  animation-delay: 2s, 2.5s;
+  animation: backgroundFadeIn 2s forwards, floatUp 40s infinite linear;
+  animation-delay: 4.5s, 6.5s; /* Start after letters appear */
 }
 
 .ic-component {
@@ -127,8 +133,8 @@
   stroke-width: 1;
   fill: rgba(0,98,204,0.05);
   opacity: 0;
-  animation: fadeIn 0.8s forwards;
-  animation-delay: 1.3s;
+  animation: backgroundFadeIn 1.5s forwards;
+  animation-delay: 4.3s; /* Start after letters appear */
 }
 
 .cpu-lines {
@@ -136,13 +142,8 @@
   stroke-width: 0.5;
   fill: none;
   opacity: 0;
-  animation: fadeIn 0.8s forwards;
-  animation-delay: 1.5s;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 0.7; }
+  animation: backgroundFadeIn 1.5s forwards;
+  animation-delay: 4.5s; /* Start after letters appear */
 }
 
 /* Smooth wave animations with longer duration */
