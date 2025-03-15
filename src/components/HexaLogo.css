@@ -49,28 +49,28 @@
 }
 
 #H {
-  animation: slideInH 4s forwards;
+  animation: slideInH 3s forwards;
 }
 
 #E {
-  animation: slideInE 4s forwards;
+  animation: slideInE 3s forwards;
 }
 
 #X1 {
-  animation: slideInX1 4s forwards;
+  animation: slideInX1 3s forwards;
 }
 
 #X2 {
-  animation: slideInX2 4s forwards;
+  animation: slideInX2 3s forwards;
 }
 
 #A {
-  animation: slideInA 4s forwards;
+  animation: slideInA 3s forwards;
 }
 
 .logo-container {
-  animation: techGlow 4s infinite alternate ease-in-out;
-  animation-delay: 4s;
+  animation: techGlow 3s infinite alternate ease-in-out;
+  animation-delay: 3s;
 }
 
 /* Data line animations - all now start after letters appear */
@@ -81,7 +81,7 @@
   fill: none;
   opacity: 0;
   animation: backgroundFadeIn 1.5s forwards, smoothDataWave 20s infinite linear;
-  animation-delay: 4s, 5.5s; /* Start after letters appear */
+  animation-delay: 3s, 5.5s; /* Start after letters appear */
 }
 
 .data-line2 {
@@ -91,7 +91,7 @@
   fill: none;
   opacity: 0;
   animation: backgroundFadeIn 1.5s forwards, smoothDataWave2 30s infinite linear;
-  animation-delay: 4.2s, 5.7s; /* Start after letters appear */
+  animation-delay: 3.2s, 4.7s; /* Start after letters appear */
 }
 
 #circuit {
@@ -100,15 +100,15 @@
   fill: none;
   opacity: 0;
   animation: backgroundFadeIn 1.5s forwards;
-  animation-delay: 4s; /* Start after letters appear */
+  animation-delay: 3s; /* Start after letters appear */
 }
 
 .circuit-node {
   fill: #0062cc;
   opacity: 0;
   r: 2;
-  animation: nodeGlow 3s infinite alternate ease-in-out;
-  animation-delay: 4.5s; /* Start after letters appear */
+  animation: nodeGlow 2s infinite alternate ease-in-out;
+  animation-delay: 3.5s; /* Start after letters appear */
 }
 
 .grid-line {
@@ -116,7 +116,7 @@
   stroke-width: 0.5;
   opacity: 0;
   animation: backgroundFadeIn 2s forwards;
-  animation-delay: 4.2s; /* Start after letters appear */
+  animation-delay: 3.2s; /* Start after letters appear */
 }
 
 .binary {
@@ -125,7 +125,7 @@
   fill: rgba(0,98,204,0.2);
   opacity: 0;
   animation: backgroundFadeIn 2s forwards, floatUp 40s infinite linear;
-  animation-delay: 4.5s, 6.5s; /* Start after letters appear */
+  animation-delay: 3.5s, 5.5s; /* Start after letters appear */
 }
 
 .ic-component {
@@ -134,7 +134,7 @@
   fill: rgba(0,98,204,0.05);
   opacity: 0;
   animation: backgroundFadeIn 1.5s forwards;
-  animation-delay: 4.3s; /* Start after letters appear */
+  animation-delay: 3.3s; /* Start after letters appear */
 }
 
 .cpu-lines {
@@ -143,7 +143,7 @@
   fill: none;
   opacity: 0;
   animation: backgroundFadeIn 1.5s forwards;
-  animation-delay: 4.5s; /* Start after letters appear */
+  animation-delay: 3.5s; /* Start after letters appear */
 }
 
 /* Smooth wave animations with longer duration */

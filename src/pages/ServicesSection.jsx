@@ -6,7 +6,7 @@ export const ServicesSection = () => {
   const services = 
     [
       {
-        title: "Web Development",
+        title: "Web Designing & Development",
         icon: "code-brackets",
         description: "Crafting responsive, dynamic, and scalable websites to enhance your digital presence."
       },
@@ -18,7 +18,7 @@ export const ServicesSection = () => {
       {
         title: "DevOps Consulting",
         icon: "devops-consulting",
-        description: "Streamlining software development and deployment processes through automation, CI/CD pipelines, and cloud infrastructure optimization."
+        description: "Streamlining software development and deployment processes through intelligent automation, robust CI/CD pipelines, and efficient cloud infrastructure optimization."
       },
       {
         title: "Blogging",
