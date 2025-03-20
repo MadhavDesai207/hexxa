@@ -132,14 +132,26 @@ export const HexaLogo = () => {
       <g className="logo-container">
         {/* HE text - first line */}
         <text id="H" x="100" y="130" fontSize="80" className="letter">H</text>
-        <text id="E" x="150" y="130" fontSize="80" className="letter">E</text>
+        <text id="E" x="154" y="140" fontSize="80" className="letter">E</text>
         
         {/* XXA text - second line (with increased spacing) */}
-        <text id="X1" x="140" y="215" fontSize="80" className="letter">X</text>
-        <text id="X2" x="190" y="215" fontSize="80" className="letter">X</text>
-        <text id="A" x="240" y="215" fontSize="80" className="letter">A</text>
+        <text id="X1" x="144" y="205" fontSize="80" className="letter">X</text>
+        <text id="X2" x="194" y="215" fontSize="80" className="letter">X</text>
+        <text id="A" x="244" y="205" fontSize="80" className="letter">A</text>
       </g>
+      {/* <g className="logo-container"> */}
+        {/* HE text - first line */}
+        {/* <text id="H" x="80" y="175" fontSize="80" className="letter">H</text>
+        <text id="E" x="135" y="175" fontSize="80" className="letter">E</text> */}
+        
+        {/* XXA text - second line (with increased spacing) */}
+        {/* <text id="X1" x="180" y="175" fontSize="80" className="letter">X</text>
+        <text id="X2" x="230" y="175" fontSize="80" className="letter">X</text>
+        <text id="A" x="280" y="175" fontSize="80" className="letter">A</text>
+      </g> */}
     </svg>
   );
 };
+
+
 

@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 export const ServiceIcon = ({ type }) => {
   // Function to return appropriate icon based on type
   const getIcon = () => {
@@ -39,6 +38,31 @@ export const ServiceIcon = ({ type }) => {
         return (
           <div className="icon-placeholder blogging">
             <div className="blog-icon">✍️</div>
+          </div>
+        );
+      case "frontend-dev":
+        return (
+          <div className="icon-placeholder frontend">
+            <div className="frontend-icon">🎨</div>
+          </div>
+        );
+      case "backend-dev":
+        return (
+          <div className="icon-placeholder backend">
+            <div className="backend-icon">🔧</div>
+          </div>
+        );
+      case "security":
+        return (
+          <div className="icon-placeholder security">
+            <div className="security-icon">🔒</div>
+          </div>
+        );
+
+      case "above":
+        return (
+          <div className="icon-placeholder security">
+            <div className="security-icon">All</div>
           </div>
         );
       default:

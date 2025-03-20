@@ -134,3 +134,81 @@
     border-color: #ffeeba;
     color: #856404;
   }
+
+  /* About Us section styling */
+.about-section {
+  padding: 3rem 0;
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 90%; 
+  max-width: 100%;
+  
+}
+
+.about-content {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.2);
+  text-align: justify;
+  border: 2px black solid;
+ 
+
+}
+
+.about-heading {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.about-subheading {
+  color: #2148c0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.about-text {
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.about-link {
+  display: inline-block;
+  background-color: #2148c0;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.about-link:hover {
+  background-color: #1a3aa0;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .about-content {
+    padding: 1.5rem;
+  }
+  
+  .about-heading {
+    font-size: 1.75rem;
+  }
+  
+  .about-subheading {
+    font-size: 1.1rem;
+  }
+}

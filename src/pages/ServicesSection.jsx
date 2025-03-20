@@ -1,6 +1,7 @@
 import React from 'react';
 import '../pages/styles/ServiceSection.css';
 import { ServiceCard } from './ServiceCard';
+import { title } from 'motion/react-client';
 
 export const ServicesSection = () => {
   const services = 
@@ -24,6 +25,26 @@ export const ServicesSection = () => {
         title: "Blogging",
         icon: "blogging",
         description: "Creating engaging, informative, and SEO-optimized content to grow your online audience and establish thought leadership."
+      },
+      {
+        title: "Frontend Development",
+        icon: "frontend-dev",
+        description: ""
+      },
+      {
+        title: "Backend Development",
+        icon: "backend-dev",
+        description: ""
+      },
+      {
+        title: "Security",
+        icon: "security",
+        description: ""
+      },
+      {
+        title: "All Of the abov",
+        icon: "above",
+        description: ""
       }
     ]
     
