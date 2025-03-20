@@ -1,5 +1,6 @@
 // CaseStudiesPage.jsx
 import React from 'react';
+import "../pages/styles/PortfolioPage.css";
 
 export const PortfolioPage = () => {
   return (

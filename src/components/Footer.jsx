@@ -1,23 +1,26 @@
 import { Button } from 'primereact/button';
 import { InputText } from 'primereact/inputtext';
+import { Link } from "react-router-dom";
 import React from 'react';
 import './Footer.css';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="footer-container">
       {/* New card section that matches the image */}
       <div className="footer-main-card headline-card">
         <div>
           <h2 className="headline-text">
-            Harnessing AI to revolutionize businesses, enhance efficiency, and 
+            Harnessing AI to revolutionize businesses, enhance efficiency, and
             drive sustainable innovation for a smarter future.
           </h2>
         </div>
         <div className="headline-cta">
-          <Button label="Contact Us" className="contact-us-button" />
+          <Link to="/contact">
+            <Button label="Contact Us" className="contact-us-button" />
+          </Link>
         </div>
       </div>
 
@@ -71,12 +74,12 @@ export const Footer = () => {
           <div className="footer-section newsletter newsletter-container">
             <h3 className="footer-subtitle">Stay Updated</h3>
             <p className="newsletter-text">Subscribe to our newsletter for the latest tech insights</p>
-            
+
             <div className="p-inputgroup newsletter-form">
               <InputText placeholder="Your email" className="newsletter-input" />
               <Button label="Subscribe" icon="pi pi-send" className="newsletter-button" />
             </div>
-            
+
             <p className="newsletter-disclaimer">
               <i className="pi pi-shield disclaimer-icon"></i>
               We respect your privacy and will never share your information.

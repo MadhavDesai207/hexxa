@@ -10,7 +10,6 @@ import {  PortfolioPage } from './pages/PortfolioPage';
 import { ContactPage } from './pages/ContactPage';
 import { HomePage } from './pages/HomePage';
 import { ServicesSection } from './pages/ServicesSection';
-import { WhyHexaPage } from './pages/WhyHexaPage';
 import { Footer } from './components/Footer';
 
 const App = () => {
@@ -23,7 +22,6 @@ const App = () => {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesSection />} />
           <Route path="/case-studies" element={<PortfolioPage />} />
-          <Route path="/why-hexa" element={<WhyHexaPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <Footer />

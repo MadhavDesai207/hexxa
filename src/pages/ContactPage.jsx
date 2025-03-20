@@ -1,5 +1,7 @@
 // ContactPage.jsx
 import React from 'react';
+import "../pages/styles/ContactPage.css";
+
 
 export const ContactPage = () => {
   return (
