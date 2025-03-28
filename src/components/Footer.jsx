@@ -38,7 +38,7 @@ export const Footer = () => {
               <a href="#" className="social-icon" aria-label="LinkedIn">
                 <i className="pi pi-linkedin"></i>
               </a>
-              <a href="#" className="social-icon" aria-label="Email">
+              <a href="mailto:hexxaprotocol@gmail.com" className="social-icon" aria-label="Email">
                 <i className="pi pi-envelope"></i>
               </a>
               <a href="#" className="social-icon" aria-label="Facebook">

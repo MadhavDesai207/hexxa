@@ -5,8 +5,15 @@ import './Navbar.css';
 export const Navbar = () => {
   return (
     <nav className="navbar">
+      <div className="hero-background">
+                <span>EMPOWERING</span><span>&nbsp;</span>
+                <span>INNOVATION</span><span>&nbsp;</span>
+                <span>WITH EXPERT</span><span>&nbsp;</span>
+                <span>IT SOLUTIONS</span>
+            </div>
+
       <div className="logo-container">
-        <Link to="/">
+        <Link to="/" className="logo-link">
           <div className="logo">
             <span className="logo-h">H</span>
             <span className="logo-e">E</span>
