@@ -19,9 +19,9 @@
     left: 35%;
     top: 4%;
     transform: translate(-50%, -50%);
-    font-size: 1rem; /* Large text */
+    font-size: 1.2rem; /* Large text */
     font-weight: 700;
-    color: rgba(44, 62, 80, 0.08); /* Subtle background effect */
+    color: rgba(44, 62, 80, 0.2); 
     text-transform: uppercase;
     z-index: 1; /* Keeps it behind the content */
     display: flex;

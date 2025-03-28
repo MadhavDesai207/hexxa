@@ -6,11 +6,8 @@ export const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="hero-background">
-                <span>EMPOWERING</span><span>&nbsp;</span>
-                <span>INNOVATION</span><span>&nbsp;</span>
-                <span>WITH EXPERT</span><span>&nbsp;</span>
-                <span>IT SOLUTIONS</span>
-            </div>
+        <span>EMPOWERING INNOVATION WITH EXPERT IT SOLUTIONS</span>
+      </div>
 
       <div className="logo-container">
         <Link to="/" className="logo-link">
