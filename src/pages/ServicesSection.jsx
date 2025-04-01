@@ -41,11 +41,11 @@ export const ServicesSection = () => {
         icon: "security",
         description: ""
       },
-      {
-        title: "All Of the abov",
-        icon: "above",
-        description: ""
-      }
+      // {
+      //   title: "All Of the abov",
+      //   icon: "above",
+      //   description: ""
+      // }
     ]
     
 

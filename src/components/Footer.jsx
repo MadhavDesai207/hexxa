@@ -1,14 +1,76 @@
 import { Button } from 'primereact/button';
 import { InputText } from 'primereact/inputtext';
 import { Link } from "react-router-dom";
-import React from 'react';
+import { Toast } from 'primereact/toast';
+import React, { useState, useRef } from 'react';
+import { subscribeToNewsletter } from '../services/newsletterService';
 import './Footer.css';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const [email, setEmail] = useState('');
+  const [loading, setLoading] = useState(false);
+  const toast = useRef(null);
+
+  const validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
+
+  const handleSubscribe = async () => {
+    // Validate email
+    if (!email) {
+      toast.current.show({ severity: 'error', summary: 'Error', detail: 'Please enter your email address', life: 3000 });
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      toast.current.show({ severity: 'error', summary: 'Error', detail: 'Please enter a valid email address', life: 3000 });
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      // Use the Firebase service to subscribe the user
+      const result = await subscribeToNewsletter(email);
+
+      if (result.success) {
+        toast.current.show({ 
+          severity: 'success', 
+          summary: 'Success', 
+          detail: result.message, 
+          life: 3000 
+        });
+        setEmail('');
+      } else {
+        toast.current.show({ 
+          severity: 'error', 
+          summary: 'Error', 
+          detail: result.message, 
+          life: 3000 
+        });
+      }
+    } catch (error) {
+      console.error('Subscription error:', error);
+      toast.current.show({ 
+        severity: 'error', 
+        summary: 'Error', 
+        detail: 'Failed to subscribe. Please try again later.', 
+        life: 3000 
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <footer className="footer-container">
+      <Toast ref={toast} />
+      
       {/* New card section that matches the image */}
       <div className="footer-main-card headline-card">
         <div>
@@ -76,8 +138,21 @@ export const Footer = () => {
             <p className="newsletter-text">Subscribe to our newsletter for the latest tech insights</p>
 
             <div className="p-inputgroup newsletter-form">
-              <InputText placeholder="Your email" className="newsletter-input" />
-              <Button label="Subscribe" icon="pi pi-send" className="newsletter-button" />
+              <InputText 
+                placeholder="Your email" 
+                className="newsletter-input" 
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                onKeyPress={(e) => e.key === 'Enter' && handleSubscribe()}
+              />
+              <Button 
+                label="Subscribe" 
+                icon="pi pi-send" 
+                className="newsletter-button" 
+                onClick={handleSubscribe}
+                loading={loading}
+                disabled={loading}
+              />
             </div>
 
             <p className="newsletter-disclaimer">

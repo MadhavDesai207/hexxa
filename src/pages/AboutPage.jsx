@@ -48,7 +48,7 @@ export const AboutPage = () => {
   const stats = [
     { id: 1, value: 6, label: "Projects Completed", suffix: "+" },
     { id: 2, value: 9, label: "Happy Clients", suffix: "+" },
-    { id: 3, value: 4, label: "Service Categories", suffix: "" },
+    { id: 3, value: 7, label: "Service Categories", suffix: "" },
     { id: 4, value: 43, label: "Client Satisfaction", suffix: "%" }
   ];
 
