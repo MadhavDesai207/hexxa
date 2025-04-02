@@ -80,7 +80,7 @@ export const Footer = () => {
           </h2>
         </div>
         <div className="headline-cta">
-          <Link to="/contact">
+          <Link to="/contact" state={{ scrollToTop: true }}>
             <Button label="Contact Us" className="contact-us-button" />
           </Link>
         </div>

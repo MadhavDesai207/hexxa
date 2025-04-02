@@ -17,30 +17,32 @@ export const ServicesSection = () => {
         description: "Designing seamless and user-friendly mobile and desktop applications for an optimized experience."
       },
       {
+        title: "Frontend Development",
+        icon: "frontend-dev",
+        description: "Building interactive, high-performance, and visually appealing user interfaces using modern frameworks and best practices."
+      },
+      {
+        title: "Backend Development",
+        icon: "backend-dev",
+        description: "Developing scalable, secure, and efficient server-side applications, APIs, and databases to power your digital solutions."
+      },
+      {
         title: "DevOps Consulting",
         icon: "devops-consulting",
         description: "Streamlining software development and deployment processes through intelligent automation, robust CI/CD pipelines, and efficient cloud infrastructure optimization."
+      },
+      {
+        title: "Security",
+        icon: "security",
+        description: "Implementing robust security measures to protect your applications, networks, and data from cyber threats and vulnerabilities."
       },
       {
         title: "Blogging",
         icon: "blogging",
         description: "Creating engaging, informative, and SEO-optimized content to grow your online audience and establish thought leadership."
       },
-      {
-        title: "Frontend Development",
-        icon: "frontend-dev",
-        description: ""
-      },
-      {
-        title: "Backend Development",
-        icon: "backend-dev",
-        description: ""
-      },
-      {
-        title: "Security",
-        icon: "security",
-        description: ""
-      },
+      
+
       // {
       //   title: "All Of the abov",
       //   icon: "above",

@@ -1,21 +1,23 @@
 /* AboutPage.css */
-
 .about-page {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
   font-family: 'Poppins', 'Segoe UI', Roboto, sans-serif;
+
 }
 
 /* Introduction Section */
 .about-intro {
   margin-bottom: 4rem;
+  
 }
 
 .about-intro-content {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  
 }
 
 .about-intro-text h1 {
