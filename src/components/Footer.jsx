@@ -20,6 +20,10 @@ export const Footer = () => {
       );
   };
 
+  const handleAboutNavigation = () => {
+    window.scrollTo(0, 0);
+  };
+
   const handleSubscribe = async () => {
     // Validate email
     if (!email) {
@@ -39,28 +43,28 @@ export const Footer = () => {
       const result = await subscribeToNewsletter(email);
 
       if (result.success) {
-        toast.current.show({ 
-          severity: 'success', 
-          summary: 'Success', 
-          detail: result.message, 
-          life: 3000 
+        toast.current.show({
+          severity: 'success',
+          summary: 'Success',
+          detail: result.message,
+          life: 3000
         });
         setEmail('');
       } else {
-        toast.current.show({ 
-          severity: 'error', 
-          summary: 'Error', 
-          detail: result.message, 
-          life: 3000 
+        toast.current.show({
+          severity: 'error',
+          summary: 'Error',
+          detail: result.message,
+          life: 3000
         });
       }
     } catch (error) {
       console.error('Subscription error:', error);
-      toast.current.show({ 
-        severity: 'error', 
-        summary: 'Error', 
-        detail: 'Failed to subscribe. Please try again later.', 
-        life: 3000 
+      toast.current.show({
+        severity: 'error',
+        summary: 'Error',
+        detail: 'Failed to subscribe. Please try again later.',
+        life: 3000
       });
     } finally {
       setLoading(false);
@@ -70,7 +74,7 @@ export const Footer = () => {
   return (
     <footer className="footer-container">
       <Toast ref={toast} />
-      
+
       {/* New card section that matches the image */}
       <div className="footer-main-card headline-card">
         <div>
@@ -126,10 +130,10 @@ export const Footer = () => {
           <div className="footer-section services-links">
             <h3 className="footer-subtitle">Services</h3>
             <ul className="footer-links">
-              <li><a href="/services/ai-solutions">AI & ML Solutions</a></li>
-              <li><a href="/services/ml-development">MApp Development</a></li>
-              <li><a href="/services/blockchain">Blockchain</a></li>
-              <li><a href="/services/digital-transformation">DevOps</a></li>
+              <li><Link to="/services/ai-solutions" onClick={handleAboutNavigation}>AI & ML Solutions</Link></li>
+              <li><Link to="/services/mobile-application-development" onClick={handleAboutNavigation}>MApp Development</Link></li>
+              <li><Link to="/services/blockchain" onClick={handleAboutNavigation}>Blockchain</Link></li>
+              <li><Link to="/services/devops-consulting" onClick={handleAboutNavigation}>DevOps</Link></li>
             </ul>
           </div>
 
@@ -138,17 +142,17 @@ export const Footer = () => {
             <p className="newsletter-text">Subscribe to our newsletter for the latest tech insights</p>
 
             <div className="p-inputgroup newsletter-form">
-              <InputText 
-                placeholder="Your email" 
-                className="newsletter-input" 
+              <InputText
+                placeholder="Your email"
+                className="newsletter-input"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 onKeyPress={(e) => e.key === 'Enter' && handleSubscribe()}
               />
-              <Button 
-                label="Subscribe" 
-                icon="pi pi-send" 
-                className="newsletter-button" 
+              <Button
+                label="Subscribe"
+                icon="pi pi-send"
+                className="newsletter-button"
                 onClick={handleSubscribe}
                 loading={loading}
                 disabled={loading}

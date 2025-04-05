@@ -163,9 +163,9 @@
   transform: translateX(0);
 }
 
-/* Newsletter section */
+/* Newsletter form styling update */
 .newsletter-container {
-  background: linear-gradient(135deg, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0.08) 100%);
+  /* background: linear-gradient(135deg, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0.08) 100%); */
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
@@ -181,7 +181,9 @@
 .newsletter-form {
   display: flex;
   margin-bottom: 1rem;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  border: 1px solid #000;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .newsletter-input {
@@ -202,30 +204,47 @@
 
 .newsletter-button {
   background-color: #000 !important;
+  color: #fff !important;
   border: 1px solid #000 !important;
   color: #fff !important;
   transition: all 0.3s ease !important;
-  border-radius: 0 4px 4px 0 !important;
-  padding: 0.75rem 1.25rem !important;
+  border-radius: 1px !important;
+  padding: 0.75rem 1.5rem !important;
   font-weight: 600 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.5rem !important;
+}
+
+.newsletter-button .p-button-label {
+  font-weight: 500;
 }
 
 .newsletter-button:hover {
   background-color: #333 !important;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
 }
 
+/* Update the newsletter container */
+.newsletter-container {
+  background-color: #f8f8f8;
+  padding: 2rem;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Update the disclaimer text style */
 .newsletter-disclaimer {
-  font-size: 0.85rem;
-  color: #777;
-  margin-top: 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 1rem;
 }
 
 .disclaimer-icon {
-  font-size: 0.9rem;
+  color: #666;
 }
 
 /* Contact Us Section */

@@ -3,8 +3,7 @@ import '../pages/styles/ServiceSection.css';
 import { ServiceCard } from './ServiceCard';
 import { title } from 'motion/react-client';
 
-export const ServicesSection = () => {
-  const services = 
+export const services = 
     [
       {
         title: "Web Designing & Development",
@@ -49,6 +48,9 @@ export const ServicesSection = () => {
       //   description: ""
       // }
     ]
+
+export const ServicesSection = () => {
+  
     
 
   return (

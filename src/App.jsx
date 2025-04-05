@@ -10,7 +10,8 @@ import { AboutPage } from './pages/AboutPage';
 import { ContactPage } from './pages/ContactPage';
 import { HomePage } from './pages/HomePage';
 import { PortfolioPage } from './pages/PortfolioPage';
-import { ServicesSection } from './pages/ServicesSection';
+import { ServiceDetailPage } from './pages/ServiceDetailPage';
+import { ServicesSection, services } from './pages/ServicesSection';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesSection />} />
+          <Route path="/services/:serviceSlug" element={<ServiceDetailPage services={services} />} />
           <Route path="/case-studies" element={<PortfolioPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
