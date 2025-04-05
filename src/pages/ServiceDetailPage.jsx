@@ -61,7 +61,7 @@ export const ServiceDetailPage = ({ services }) => {
           "Testing",
           "Deployment & Maintenance"
         ],
-        technologies: ["React Native", "Flutter", "Swift", "Kotlin", "Firebase", "AWS Amplify"]
+        technologies: ["Flutter", "Dart",  "Kotlin", "Firebase", "FlutteFlow"]
       };
     }
     else if (baseTitle.includes('frontend')) {
@@ -80,7 +80,7 @@ export const ServiceDetailPage = ({ services }) => {
           "Testing & Debugging",
           "Deployment"
         ],
-        technologies: ["React", "Vue.js", "Angular", "TypeScript", "SASS/SCSS", "Webpack", "Redux"]
+        technologies: ["React", "Vue.js", "Angular", "TypeScript", "Bootstrap", "Tailwind CSS", "PrimeReact", "Material-UI"]
       };
     }
     else if (baseTitle.includes('backend')) {
@@ -118,7 +118,7 @@ export const ServiceDetailPage = ({ services }) => {
           "Monitoring Setup",
           "Continuous Improvement"
         ],
-        technologies: ["Docker", "Kubernetes", "Jenkins", "GitHub Actions", "AWS", "Azure", "Terraform", "Prometheus", "Grafana"]
+        technologies: ["Docker", "Kubernetes", "Jenkins", "GCP", "AWS", "Azure", "Terraform", "Prometheus", "Grafana","Ansible"]
       };
     }
     else if (baseTitle.includes('security')) {

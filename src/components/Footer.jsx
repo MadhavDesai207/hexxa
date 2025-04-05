@@ -170,7 +170,7 @@ export const Footer = () => {
       <div className="footer-bottom">
         <div className="footer-bottom-content">
           <div className="copyright">
-            © {currentYear} Hexxa Technologies. All Rights Reserved.
+            © {currentYear} Hexxa Protocol. All Rights Reserved.
           </div>
           <div className="footer-bottom-links">
             <a href="/privacy-policy">Privacy Policy</a>

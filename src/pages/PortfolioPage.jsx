@@ -15,7 +15,14 @@ export const PortfolioPage = () => {
       image: "Stablecoin_deployed",
       description: "This blog explains how to deploy a basic stablecoin on Rootstock, a Bitcoin sidechain with smart contract capabilities. It guides users through writing and compiling an ERC-20 based stablecoin contract in Remix IDE. The tutorial then details the steps for deploying this contract to the Rootstock testnet using MetaMask, including adding the custom Rootstock network.",
       link: "https://rootstock.hashnode.dev/deploy-simple-stablecoin-on-rootstock-side-chain",
-      categories: ['Contribution'] // Add categories to each portfolio item
+      categories: ['Contribution','Blogging', 'Post'] 
+    },
+    {
+      title: "SHREEJI INTERNATIONAL IMPORT | EXPORT",
+      image: "Shreejiinternationas",
+      description: "Developed and deployed a responsive website for Shreeji Internationals, a chemical export company based in India. The site showcases a wide range of organic, inorganic, and agrochemical products, with detailed categorization and user-friendly navigation. Integrated modern UI/UX practices and ensured cross-device compatibility to enhance user engagement. Deployed on Vercel with proper routing and fallback configuration to support smooth navigation across dynamic routes.",
+      link: "https://shreejiinternationals.in/",
+      categories: ['Web App'] 
     },
     
   ];
