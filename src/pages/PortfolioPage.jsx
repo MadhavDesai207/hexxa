@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { PortfolioCard } from './PortfolioCard';
 import "../pages/styles/PortfolioPage.css";
+import { PortfolioCard } from './PortfolioCard';
 
 export const PortfolioPage = () => {
   // Categories for filtering
@@ -15,6 +15,13 @@ export const PortfolioPage = () => {
       image: "Stablecoin_deployed",
       description: "This blog explains how to deploy a basic stablecoin on Rootstock, a Bitcoin sidechain with smart contract capabilities. It guides users through writing and compiling an ERC-20 based stablecoin contract in Remix IDE. The tutorial then details the steps for deploying this contract to the Rootstock testnet using MetaMask, including adding the custom Rootstock network.",
       link: "https://rootstock.hashnode.dev/deploy-simple-stablecoin-on-rootstock-side-chain",
+      categories: ['Contribution','Blogging', 'Post'] 
+    },
+    {
+      title: "How delegatecall Works in Solidity ?",
+      image: "delegatecall",
+      description: "Implemented smart contract architecture on Rootstock using delegatecall for modular, upgradeable dApps. Developed proxy and logic contracts to separate storage from logic, enabling secure upgrades without disrupting user data. Ensured compatibility with Bitcoin-backed security and EVM tools like Hardhat and Truffle. Addressed storage layout risks and optimized gas usage.",
+      link: "https://rootstock.hashnode.dev/how-delegatecall-works-in-solidity",
       categories: ['Contribution','Blogging', 'Post'] 
     },
     {

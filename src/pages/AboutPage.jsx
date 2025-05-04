@@ -145,7 +145,7 @@ export const AboutPage = () => {
 
             <div className="about-description">
               <p>
-                Founded in 2023, Hexxa emerged from a simple vision: to harness the power of advanced technology to solve real-world business challenges. We believe that AI and digital transformation shouldn't just be buzzwords—they should deliver measurable value and drive sustainable growth.
+                Founded in 2023, Hexxa emerged from a simple vision: to harness the power of advanced technology to solve real-world business challenges. We believe that AI and digital transformation shouldn't just be buzzwords-they should deliver measurable value and drive sustainable growth.
               </p>
               <p>
                 As technology consultants and solution providers, we bridge the gap between complex technical capabilities and practical business applications. Our team combines deep technical expertise with business acumen to deliver solutions that are not just technologically sound but strategically aligned with your objectives.
